@@ -1,3 +1,5 @@
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/romslf/ultimate-proxy?include_prereleases) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/latest/total)
+
 # Ultimate-Proxy
 Repository for Ultimate Proxy releases, a stratum mining proxy
 
