@@ -42,7 +42,8 @@ Ultimate Proxy aims to be your best friend for mining.
 
 * Control on which pool you are working on
 * Control on which wallet you will be rewarded
-* Getting stats of all your rigs in the same place (per rig and total)- Getting some estimations (For now, the number of shares per minute/hour/day)
+* Getting stats of all your rigs in the same place (per rig and total)
+* Getting some estimations (For now, the number of shares per minute/hour/day)
 * Access the proxy logs as well as the statistics of workers remotely
 * Allows a 50% fee reduction of some mining software
 * Activate the “ZIL” mode which allow mining ETH/ETC + ZIL
