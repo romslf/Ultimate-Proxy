@@ -77,11 +77,13 @@ Ultimate Proxy aims to be your best friend for mining.
 # Conclusion
 
 The name is “Ultimate” Proxy, but it's not meant to be the “best” software out there, I just found that name cool, and I'll try to make it work for everyone, that's why its called “Ultimate Proxy”.
+
 I'm not claiming that this program is the best or whatever, I'll let you be the judge.
+I hope that you like it and that it will help some of you !
 
-I hope that you like it and that it will help some of you !I'll be glad to read your feedbacks !
+I'll be glad to read your feedbacks !
+
 Keep in mind that this software is in early stage of development.
-
 
 Don't hesitate to:
 * Ask questions
