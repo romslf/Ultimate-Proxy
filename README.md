@@ -2,6 +2,8 @@
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total)
 
+# **Please find a FREE online dashboard [HERE](https://github.com/romslf/Ultimate-Proxy/wiki/Quick-start#online-dashboard-interface)**
+
 # Ultimate-Proxy
 Repository for Ultimate Proxy releases, a stratum mining proxy
 
