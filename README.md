@@ -5,7 +5,7 @@
 # **Please find a FREE online dashboard [HERE](https://github.com/romslf/Ultimate-Proxy/wiki/Quick-start#online-dashboard-interface)**
 
 ## [Documentation](https://github.com/romslf/Ultimate-Proxy/wiki)
-
+## [Discord](https://discord.gg/zWsTZXBYYq)
 # Ultimate-Proxy
 Repository for Ultimate Proxy releases, a stratum mining proxy
 
