@@ -65,7 +65,7 @@ Ultimate Proxy aims to be your best friend for mining.
 
 # Download
 
-[VirusTotal](https://www.virustotal.com/gui/file/83036d1a43b9fb88041bf6a6f96586836e406fdee81065b51a9dec044bc68fc1/detection)
+[VirusTotal](https://www.virustotal.com/gui/file/e1ffdc33af79703daf3cd8a2c5695402a31f576f1540d7df21a4fd2886fbbfc9)
 
 [Download](https://github.com/romslf/Ultimate-Proxy/releases)
 
