@@ -1,6 +1,6 @@
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/romslf/ultimate-proxy?include_prereleases) 
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.2.1/total)
 
 # **Please find a FREE online dashboard [HERE](https://github.com/romslf/Ultimate-Proxy/wiki/Quick-start#online-dashboard-interface)**
 
@@ -36,8 +36,8 @@ With Ultimate Proxy:
 Instead of connecting your rigs to a mining pool, you are going to connect all your rigs to Ultimate Proxy, and proxy to a pool.
 From here, Ultimate Proxy will receive all your rigs requests. And will adjust it depending on your proxy config. 
 
-On rigs Authorize request for example, if you enabled it in config, it will replace rigs wallets by the one given in your proxy config, so you can edit all your rigs address/pool in one place.
-It can record each accepted/reject shares too.
+**The best part is that it subscribre once for jobs and broacast them to all connected workers.
+This lead to a huge bandwitch usage reduction, and a more stable job distributions along all miners, wich can increase profitability on a long run.**
 
 
 # So, how can Ultimate Proxy help you ?
@@ -46,29 +46,19 @@ Ultimate Proxy aims to be your best friend for mining.
 
 **For now Ultimate Proxy is useful for:**
 
+* Huge bandwidth optimisation
+* Switch between pools
 * Control on which pool you are working on
 * Control on which wallet you will be rewarded
 * Getting stats of all your rigs in the same place (per rig and total)
-* Getting some estimations (For now, the number of shares per minute/hour/day)
+* Getting some estimations (Estimate/Calculated hashrate, number of shares per minute/hour/day)
 * Access the proxy logs as well as the statistics of workers remotely
-* Allows a 50% fee reduction of some mining software
-* Activate the “ZIL” mode which allow mining ETH/ETC + ZIL
+* Allows fee supression of some mining software
 * Record the exact number of mining time of each rig as well of the numbers of reconnections
-
-**To come up ?**
-
-* Optimization of bandwidth
-* One worker mode, by letting think that all rigs are a single miner to the pool
-* Notifications about defined events
-* Current estimated earnings and forecast
-* Highly configurable profit switch for coins of same algo
-* Different switching strategies between pools (Ex: quota, ping, failover, other?)
-* Calculates the accepted hash rate by pools- Your idea ?
-
 
 # Screenshots
 
-*Those screenshots could be outdated*
+*Those screenshots are outdated*
 [Starting](https://preview.redd.it/yz2znqzb39z51.png?width=978&format=png&auto=webp&s=81390a36176b471072eb40e6bcf1b5468709b712)
 [Running](https://preview.redd.it/ak4fuwce39z51.png?width=723&format=png&auto=webp&s=985b5198a04ceedd93d19e1c731a62d4bd666d59)
 
@@ -78,7 +68,6 @@ Ultimate Proxy aims to be your best friend for mining.
 [VirusTotal](https://www.virustotal.com/gui/file/83036d1a43b9fb88041bf6a6f96586836e406fdee81065b51a9dec044bc68fc1/detection)
 
 [Download](https://github.com/romslf/Ultimate-Proxy/releases)
-
 
 # Conclusion
 
@@ -98,3 +87,9 @@ Don't hesitate to:
 * Criticize anything
 
 Thank you for reading all this, and happy mining !
+
+---
+
+# Note
+
+The software contain a 1% DevFee
