@@ -56,6 +56,21 @@ Ultimate Proxy aims to be your best friend for mining.
 * Allows fee supression of some mining software
 * Record the exact number of mining time of each rig as well of the numbers of reconnections
 
+# Non-exhaustive list of compatible services
+
+### Mining softwares
+
+- [Teamredminer](https://github.com/todxx/teamredminer) (You can add `--eth_hash_report on`, it will enable hashrate reporting)
+- [LolMiner](https://github.com/Lolliedieb/lolMiner-releases) (Without any arguments)
+- [PhoenixMiner](https://bitcointalk.org/index.php?topic=2647654.0) (Need `-proto 4` argument)
+- [Gminer](https://github.com/develsoftware/GMinerRelease) (Need `--proto stratum` argument)
+
+### Pools
+
+- [2miners](https://2miners.com)
+- [Crazypool](https://crazypool.org/)
+- [Flexpool](https://www.flexpool.io/) (Using port 4444)
+
 # Screenshots
 
 *Those screenshots are outdated*
