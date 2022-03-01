@@ -70,6 +70,8 @@ Ultimate Proxy aims to be your best friend for mining.
 - [2miners](https://2miners.com)
 - [Crazypool](https://crazypool.org/)
 - [Flexpool](https://www.flexpool.io/) (Using port 4444)
+- [Prohashing](https://prohashing.com/)
+- [Woolypooly](https://woolypooly.com/)
 
 # Screenshots
 
