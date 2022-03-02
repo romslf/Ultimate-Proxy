@@ -1,6 +1,9 @@
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/romslf/ultimate-proxy?include_prereleases) 
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.2.1/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.2.1/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.3.1/total)
 
 # **Please find a FREE online dashboard [HERE](https://github.com/romslf/Ultimate-Proxy/wiki/quick-start#online-dashboard-interface-from-v1321)**
 
