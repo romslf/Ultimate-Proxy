@@ -78,7 +78,7 @@ Ton
 
 # Download
 
-[VirusTotal](https://www.virustotal.com/gui/file/d633f9bed0a00ae20346be6a804ff73ff857694f576bb5e2a637de1ddb659f72)
+[VirusTotal](https://www.virustotal.com/gui/file/6a76266b93d36ffb4c7980b9eb07502339d08d386e9b1ebd75250a2a0115534c)
 
 [Download](https://github.com/romslf/Ultimate-Proxy/releases)
 
