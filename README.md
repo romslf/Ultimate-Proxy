@@ -14,19 +14,6 @@ Repository for Ultimate Proxy releases, a stratum mining proxy
 
 Developed using Dotnet, it should work on Windows and Linux.
 
-
-# Preamble
-
-First, I made a poll on r/ethereummining and r/gpumining to know who were using a mining proxy, the results are:
-
-* 3 - Yes
-* 20 - No
-* 1 - Why not
-* 28 - What is it ?
-
-So i'll try to explain briefly what is it and why it was developed.
-
-
 # What is a proxy ?
 
 A proxy is a computer software that plays the role of intermediary by placing itself between two hosts to facilitate or monitor their exchanges.
@@ -70,11 +57,17 @@ Ultimate Proxy aims to be your best friend for mining.
 
 ### Pools
 
+Ethash
 - [2miners](https://2miners.com)
 - [Crazypool](https://crazypool.org/)
 - [Flexpool](https://www.flexpool.io/) (Using port 4444)
 - [Prohashing](https://prohashing.com/)
 - [Woolypooly](https://woolypooly.com/)
+- [Unmineable](https://unmineable.com/)
+
+Ton
+- [Icemining](https:/icemining.ca)
+- [TonWhales](https://tonwhales.com/)
 
 # Screenshots
 
