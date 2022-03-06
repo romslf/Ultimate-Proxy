@@ -10,9 +10,8 @@
 ## [Documentation](https://github.com/romslf/Ultimate-Proxy/wiki)
 ## [Discord](https://discord.gg/zWsTZXBYYq)
 # Ultimate-Proxy
-Repository for Ultimate Proxy releases, a stratum mining proxy
 
-Developed using Dotnet, it should work on Windows and Linux.
+Repository for Ultimate Proxy releases, a multi platform stratum mining proxy
 
 # What is a proxy ?
 
