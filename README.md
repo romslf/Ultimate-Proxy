@@ -32,7 +32,6 @@ Ultimate Proxy aims to be your best friend for mining.
 * Getting stats of all your rigs in the same place (per rig and total)
 * Getting some estimations (Estimate/Calculated hashrate, number of shares per minute/hour/day)
 * Access the proxy logs as well as the statistics of workers remotely
-* Allows fee supression of some mining software
 * Record the exact number of mining time of each rig as well of the numbers of reconnections
 
 # Supported coins:
