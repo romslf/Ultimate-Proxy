@@ -1,3 +1,4 @@
+## [Download](https://github.com/romslf/Ultimate-Proxy/releases)
 ## [Discord](https://discord.gg/zWsTZXBYYq)
 # Ultimate-Proxy
 
@@ -67,11 +68,6 @@ Ultimate Proxy aims to be your best friend for mining.
 *Those screenshots are outdated*
 [Starting](https://preview.redd.it/yz2znqzb39z51.png?width=978&format=png&auto=webp&s=81390a36176b471072eb40e6bcf1b5468709b712)
 [Running](https://preview.redd.it/ak4fuwce39z51.png?width=723&format=png&auto=webp&s=985b5198a04ceedd93d19e1c731a62d4bd666d59)
-
-
-# Download
-
-[Download](https://github.com/romslf/Ultimate-Proxy/releases)
 
 # Conclusion
 
