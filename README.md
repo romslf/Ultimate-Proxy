@@ -1,15 +1,3 @@
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/romslf/ultimate-proxy?include_prereleases) 
-
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.1.1.0/total)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.3.2.1/total)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.2.1/total)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.3.1/total)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.4.1/total)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/downloads-pre/romslf/ultimate-proxy/1.4.4.2/total)
-
-# **Please find a FREE online dashboard [HERE](https://github.com/romslf/Ultimate-Proxy/wiki/quick-start#online-dashboard-interface-from-v1321)**
-
-## [Documentation](https://github.com/romslf/Ultimate-Proxy/wiki)
 ## [Discord](https://discord.gg/zWsTZXBYYq)
 # Ultimate-Proxy
 
@@ -47,26 +35,31 @@ Ultimate Proxy aims to be your best friend for mining.
 * Allows fee supression of some mining software
 * Record the exact number of mining time of each rig as well of the numbers of reconnections
 
+# Supported coins:
+
+- ETH, ETC
+- RVN
+- FIRO
+- TON
+- FLUX, ZEC, ZEN, BTG
+
 # Non-exhaustive list of compatible services
 
 ### Mining softwares
 
-- [Teamredminer](https://github.com/todxx/teamredminer) (You can add `--eth_hash_report on`, it will enable hashrate reporting)
-- [LolMiner](https://github.com/Lolliedieb/lolMiner-releases) (Without any arguments)
-- [PhoenixMiner](https://bitcointalk.org/index.php?topic=2647654.0) (Need `-proto 4` argument)
-- [Gminer](https://github.com/develsoftware/GMinerRelease) (Need `--proto stratum` argument)
+- [Teamredminer](https://github.com/todxx/teamredminer)
+- [LolMiner](https://github.com/Lolliedieb/lolMiner-releases)
+- [PhoenixMiner](https://bitcointalk.org/index.php?topic=2647654.0)
+- [Gminer](https://github.com/develsoftware/GMinerRelease)
 
 ### Pools
 
-Ethash
 - [2miners](https://2miners.com)
 - [Crazypool](https://crazypool.org/)
-- [Flexpool](https://www.flexpool.io/) (Using port 4444)
+- [Flexpool](https://www.flexpool.io/)
 - [Prohashing](https://prohashing.com/)
 - [Woolypooly](https://woolypooly.com/)
 - [Unmineable](https://unmineable.com/)
-
-Ton
 - [Icemining](https:/icemining.ca)
 - [TonWhales](https://tonwhales.com/)
 
@@ -106,4 +99,4 @@ Thank you for reading all this, and happy mining !
 
 # Note
 
-The software contain a 1% DevFee
+The software contain a 0.8% DevFee
