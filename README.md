@@ -1,5 +1,18 @@
 ## [Download](https://github.com/romslf/Ultimate-Proxy/releases)
 ## [Discord](https://discord.gg/zWsTZXBYYq)
+
+- [What is a proxy ?](#what-is-a-proxy-)
+- [Features](#features)
+- [Supported coins](#supported-coins)
+- [Usage](#usage)
+- [Config file examples](#config-file-examples)
+    + [Coin config example](#coin-config-example)
+    + [Smart Switch config example (Ethash)](#smart-switch-config-example-ethash)
+    + [Smart Switch config example (ETH vs Nicehash ethash)](#smart-switch-config-example-eth-vs-nicehash-ethash)
+- [Non-exhaustive list of compatible services](#non-exhaustive-list-of-compatible-services)
+    + [Mining softwares](#mining-softwares)
+    + [Pools](#pools)
+
 # Ultimate-Proxy
 
 Repository for Ultimate Proxy releases, a multi platform stratum mining proxy
@@ -16,32 +29,194 @@ With Ultimate Proxy:
 Instead of connecting your rigs to a mining pool, you are going to connect all your rigs to Ultimate Proxy, and proxy to a pool.
 From here, Ultimate Proxy will receive all your rigs requests. And will adjust it depending on your proxy config. 
 
-**The best part is that it subscribre once for jobs and broacast them to all connected workers.
-This lead to a huge bandwitch usage reduction, and a more stable job distributions along all miners, wich can increase profitability on a long run.**
+The best part is that it subscribre once for jobs and broacast them to all connected workers. 
+This lead to a huge bandwitch usage reduction, and a more stable job distributions along all miners, wich can increase profitability on a long run.
 
+**With our example of 100 workers this will divide our bandwidth usage by 100**
 
-# So, how can Ultimate Proxy help you ?
+# Features
 
-Ultimate Proxy aims to be your best friend for mining.
+- Huge bandwidth usage reduction
+- Control and monitor all your workers at one place
+- Smart switch (Profit, Reward, Difficulty, TimeToBlock) _[Thanks to Minerstat for providing such an awesome API for free]_
+- End-to-end encryption
+- Pool mining
+- Solo mining directly to node (Only ETH/ETC for now)
+- Switch between pools and/or node without restarting miners
+- Switch between wallets without restarting miners
+- Keep track of your workers uptime
+- Keep track of your workers reconnection
+- Get total and per pool accepted/rejected shares
+- Get average and per pool calculated hashrate
+- Get average and per pool response time
+- Unlimited number of failover pools
 
-**For now Ultimate Proxy is useful for:**
+Some users find it useful for:
 
-* Huge bandwidth optimisation
-* Switch between pools
-* Control on which pool you are working on
-* Control on which wallet you will be rewarded
-* Getting stats of all your rigs in the same place (per rig and total)
-* Getting some estimations (Estimate/Calculated hashrate, number of shares per minute/hour/day)
-* Access the proxy logs as well as the statistics of workers remotely
-* Record the exact number of mining time of each rig as well of the numbers of reconnections
+- Mining on unMineable and switch between coins
+- Mining on pools most of the time and try their luck on solo the rest of the time
+- Mining on different wallets for charging hosting fee
+- Mining on different wallets for splitting rewards in case of sharing rig/farm
+- Control workers using different OS at a single place
 
-# Supported coins:
+# Supported coins
 
-- ETH, ETC
+- CLO, ETC, ETH, EXP, QKC, UBQ
+- BTCZ, BTG, FLUX, HUSH, KMD, YEC, ZCL, ZEC, ZEN, ZER
 - RVN
 - FIRO
-- TON
-- FLUX, ZEC, ZEN, BTG
+
+# Usage
+
+1. Install .NET 6.0 runtime, which can be found here: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+2. Download Ultimate Proxy
+3. Edit config.json according to your needs (If there is no config.json file, just run Ultimate Proxy it will create one. See 4.)
+4. Either double click on the .exe file, or in your terminal use one of the following command:
+
+```bash
+dotnet UltimateProxyV2.dll # Will load the default config (config.json if found, or switch-config.json if found, else create config.json)
+dotnet UltimateProxyV2.dll config-FLUX.json # Will load specified config file name (Eitheir a coin config file or a switch-config.json file)
+```
+
+5. Now instead of pointing you workers to the pool address, change it to your proxy IP
+6. Enjoy 😎
+
+To achieve **100% Uptime** I strongly recommend using PM2 process manager: 
+https://pm2.keymetrics.io/docs/usage/quick-start/
+
+1. Install nodejs/npm (Can be done very easily using https://github.com/nvm-sh/nvm)
+2. Then you get access to the following commands 
+```bash
+npm install pm2@latest -g # Install pm2
+```
+```bash
+pm2 start dotnet --name UltimateProxy -- UltimateProxyV2.dll # Start UltimateProxy 
+pm2 start dotnet --name UltimateProxy -- UltimateProxyV2.dll configName.json # Start UltimateProxy with the specified config file
+```
+```bash
+pm2 startup # Auto start pm2 on boot/reboot, (follow the output messages for aditional steps)
+``` 
+```bash
+pm2 save # Save the current process list to be automatically started on boot/startup 
+```
+```bash
+pm2 list # See all running pm2 process an their status
+```
+```bash
+pm2 logs UltimateProxy # To see logs and errors of UltimateProxy 
+```
+```bash
+pm2 restart UltimateProxy # To restart UltimateProxy in case of a config change for example 
+```
+
+# Config file examples
+
+## Coin config example
+
+```javascript
+{
+  "allowedAddresses": [
+    "0.0.0.0"	// This allow every IP to connect to proxy, please remove it before adding only needed IPs
+  ],
+    "poolList": [
+    {
+      "address": "eth.2miners.com",
+      "port": 12020,
+      "ssl": true,	// SSL Pool
+      "ratio": 98	// Will mine for 98% of RatioWindowTimeHours before switching
+    },
+    {
+      "address": "eth.2miners.com",
+      "port": 2020,
+      "ratio": 1,	// Will mine for 1% of RatioWindowTimeHours before switching
+      "wallet": "ANOTHER WALLET",	// Will use this wallet instead of global Wallet
+      "password": "ANOTHER PASS"	// Will use this password instead of global Password
+    },
+    {
+      "address": "192.168.1.30",
+      "port": 8545,
+      "node": true,	// Solo mining to node
+      "ratio": 1	// Will mine for 1% of RatioWindowTimeHours before switching
+    },
+    {
+      "address": "eth-de.flexpool.io",	// Will be only used as failover since no ratio is set
+      "port": 4444
+    }
+  ],
+  "Protocol": "Stratum", // The mining protocol used (Ethproxy/Stratum/Nicehash)
+  "Coin": "ETH",	// The coin you want to mine
+  "Wallet": "YOUR WALLET HERE",	// Your mining wallet
+  "Worker": "UltimateProxy",	// Proxy worker name
+  "Password": "x",	// Proxy password
+  "RatioWindowTimeHours": 1,	// Used for ratio switch strategie, minimum 1H maximum 24H
+  "ProxyPort": 4444,	// Proxy port
+  "ProxyCert": "",	// Set it if you want your workers to connect to proxy using SSL (See "Docs" folder create a .pfx file)
+  "PrintStats": true,	// Display workers/pools stats
+  "StatsIntervalSeconds": 60,	// Delay between PrintStats
+  "NodeGetWorkIntervalMs": 500,	// Delay between node solo getWork requests
+  "PrintJobs": true,	// Print new jobs or not
+  "StaleSharesWindow": 10, // How much shares should be kept in memory to catch duplciate shares
+  "ForceWorkersReconnect": false // Reconnect workers on switch, NEED to be turned on if you use Stratum/Nicehash protocol and that your miner doesn't support set.extranonce request
+}
+```
+
+## Smart Switch config example (Ethash)
+
+```javascript
+{
+  "Coins": [
+    "ETH",
+    "EXP",
+    "QKC",
+    "CLO"
+  ],
+  "Mode": "PROFIT",
+  "MinimumTimeSeconds": 900,
+  "MinimumDifferencePercent": 1,
+  "ConfigList": [
+    {
+      "Coin": "ETH",
+      "FileName": "config-ETH.json"
+    },
+    {
+      "Coin": "EXP",
+      "FileName": "config-EXP.json"
+    },
+    {
+      "Coin": "QKC",
+      "FileName": "config-QKC.json"
+    },
+    {
+      "Coin": "CLO",
+      "FileName": "config-CLO.json"
+    }
+  ]
+}
+```
+
+### Smart Switch config example (ETH vs Nicehash ethash)
+
+```javascript
+{
+  "Coins": [
+    "ETH",
+    "NH Ethash"
+  ],
+  "Mode": "PROFIT",
+  "MinimumTimeSeconds": 900,
+  "MinimumDifferencePercent": 1,
+  "ConfigList": [
+    {
+      "Coin": "ETH",
+      "FileName": "config-ETH.json"
+    },
+    {
+      "Coin": "NH Ethash",
+      "FileName": "config-NH-Ethash.json"
+    }
+  ]
+}
+```
 
 # Non-exhaustive list of compatible services
 
@@ -60,25 +235,8 @@ Ultimate Proxy aims to be your best friend for mining.
 - [Prohashing](https://prohashing.com/)
 - [Woolypooly](https://woolypooly.com/)
 - [Unmineable](https://unmineable.com/)
-- [Icemining](https:/icemining.ca)
-- [TonWhales](https://tonwhales.com/)
 
-# Screenshots
-
-*Those screenshots are outdated*
-[Starting](https://preview.redd.it/yz2znqzb39z51.png?width=978&format=png&auto=webp&s=81390a36176b471072eb40e6bcf1b5468709b712)
-[Running](https://preview.redd.it/ak4fuwce39z51.png?width=723&format=png&auto=webp&s=985b5198a04ceedd93d19e1c731a62d4bd666d59)
-
-# Conclusion
-
-The name is “Ultimate” Proxy, but it's not meant to be the “best” software out there, I just found that name cool, and I'll try to make it work for everyone, that's why its called “Ultimate Proxy”.
-
-I'm not claiming that this program is the best or whatever, I'll let you be the judge.
-I hope that you like it and that it will help some of you !
-
-I'll be glad to read your feedbacks !
-
-Keep in mind that this software is in early stage of development.
+---
 
 Don't hesitate to:
 * Ask questions
