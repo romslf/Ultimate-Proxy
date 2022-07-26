@@ -80,8 +80,11 @@ dotnet UltimateProxyV2.dll config-FLUX.json # Will load specified config file na
 ```
 
 5. Now instead of pointing you workers to the pool address, change it to your proxy IP
-6. (Optional) Plug it to the online dashboard, talk to https://t.me/UltimateProxyBot or visit https://up.pragma-solutions.fr, copy and paste the API token provided by the bot to your proxy config in "DashboardApiToken" field, resart your proxy if already running.
-7. Enjoy 😎
+6. (Optional) Plug it to the online dashboard
+    - Talk to https://t.me/UltimateProxyBot or visit https://up.pragma-solutions.fr
+    - Copy and paste the API token provided by the bot to your proxy config in "DashboardApiToken" field
+    - Restart your proxy if already running
+8. Enjoy 😎
 
 To achieve **100% Uptime** I strongly recommend using PM2 process manager: 
 https://pm2.keymetrics.io/docs/usage/quick-start/
