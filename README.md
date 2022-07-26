@@ -1,5 +1,5 @@
-## [Download](https://github.com/romslf/Ultimate-Proxy/releases)
-## [Discord](https://discord.gg/zWsTZXBYYq)
+## [Download](https://github.com/romslf/Ultimate-Proxy/releases), [Discord](https://discord.gg/zWsTZXBYYq)
+## [Online Dashboard](https://up.pragma-solutions.fr/), [Telegram Bot](https://t.me/UltimateProxyBot)
 
 - [What is a proxy ?](#what-is-a-proxy-)
 - [Features](#features)
@@ -37,6 +37,7 @@ This lead to a huge bandwitch usage reduction, and a more stable job distributio
 # Features
 
 - Huge bandwidth usage reduction
+- Remote dashboard statistics, regroup all your proxies/workers
 - Control and monitor all your workers at one place
 - Smart switch (Profit, Reward, Difficulty, TimeToBlock) _[Thanks to Minerstat for providing such an awesome API for free]_
 - End-to-end encryption
