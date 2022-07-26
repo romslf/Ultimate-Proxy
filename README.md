@@ -149,7 +149,8 @@ pm2 restart UltimateProxy # To restart UltimateProxy in case of a config change 
   "Wallet": "YOUR WALLET HERE",	// Your mining wallet
   "Worker": "UltimateProxy",	// Proxy worker name
   "Password": "x",	// Proxy password
-  "RatioWindowTimeHours": 1,	// Used for ratio switch strategie, minimum 1H maximum 24H
+  "DashboardApiToken": "", // Your dashboard api token, generate it by talking to https://t.me/UltimateProxyBot or visit https://up.pragma-solutions.fr
+  "RatioWindowTimeHours": 1,  // Used for ratio switch strategie, minimum 1H maximum 24H
   "ProxyPort": 4444,	// Proxy port
   "ProxyCert": "",	// Set it if you want your workers to connect to proxy using SSL (See "Docs" folder create a .pfx file)
   "PrintStats": true,	// Display workers/pools stats
