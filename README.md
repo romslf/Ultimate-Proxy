@@ -1,5 +1,4 @@
 ## [Download](https://github.com/romslf/Ultimate-Proxy/releases), [Discord](https://discord.gg/zWsTZXBYYq)
-## [Online Dashboard](https://up.pragma-solutions.fr/), [Telegram Bot](https://t.me/UltimateProxyBot)
 
 - [What is a proxy ?](#what-is-a-proxy-)
 - [Features](#features)
@@ -62,29 +61,41 @@ Some users find it useful for:
 
 # Supported coins
 
-- CLO, ETC, ETH, EXP, QKC, UBQ
-- BTCZ, BTG, FLUX, HUSH, KMD, YEC, ZCL, ZEC, ZEN, ZER
-- RVN
-- FIRO
+- Ethash: CLO, ETC, ETHW, EXP, QKC, UBQ
+- Equihash: BTCZ, BTG, FLUX, HUSH, KMD, YEC, ZCL, ZEC, ZEN, ZER
+- Kawpow: RVN, MEWC, NEOX
+- Firopow: FIRO
+- Autolykos: ERG
+- SHA512256d: RXD
+- kHeavyHash: KAS
+- Nexapow: NEXA
+- Octopus: CFX
 
 # Usage
 
-1. Install .NET 6.0 runtime, which can be found here: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-2. Download Ultimate Proxy
-3. Edit config.json according to your needs (If there is no config.json file, just run Ultimate Proxy it will create one. See 4.)
-4. Either double click on the .exe file, or in your terminal use one of the following command:
+1. Download Ultimate Proxy
+2. Edit config.json according to your needs (Please use a high difficulty port)
+3. Either double click on the .exe file, or in your terminal use one of the following command:
 
 ```bash
-dotnet UltimateProxyV2.dll # Will load the default config (config.json if found, or switch-config.json if found, else create config.json)
-dotnet UltimateProxyV2.dll config-FLUX.json # Will load specified config file name (Eitheir a coin config file or a switch-config.json file)
+# Load the default config (config.json if found, or switch-config.json if found, else create config.json)
+# Linux
+chmod +x # You may need to do that once to give it permision to run
+./UltimateProxyV2
+
+# Windows:
+UltimateProxyV2.exe
+
+# Load specified config file name (Eitheir a coin config file or a switch-config.json file)
+# Linux
+./UltimateProxyV2 ConfigName.json
+
+# Windows:
+UltimateProxyV2.exe ConfigName.json
 ```
 
-5. Now instead of pointing you workers to the pool address, change it to your proxy IP
-6. (Optional) Plug it to the online dashboard
-    - Talk to https://t.me/UltimateProxyBot or visit https://up.pragma-solutions.fr
-    - Copy and paste the API token provided by the bot to your proxy config in "DashboardApiToken" field
-    - Restart your proxy if already running
-8. Enjoy 😎
+4. Now instead of pointing you workers to the pool address, change it to your proxy IP
+5. Enjoy 😎
 
 To achieve **100% Uptime** I strongly recommend using PM2 process manager: 
 https://pm2.keymetrics.io/docs/usage/quick-start/
@@ -95,8 +106,8 @@ https://pm2.keymetrics.io/docs/usage/quick-start/
 npm install pm2@latest -g # Install pm2
 ```
 ```bash
-pm2 start dotnet --name UltimateProxy -- UltimateProxyV2.dll # Start UltimateProxy 
-pm2 start dotnet --name UltimateProxy -- UltimateProxyV2.dll configName.json # Start UltimateProxy with the specified config file
+pm2 start UltimateProxyV2 --name UltimateProxy # Start UltimateProxy 
+pm2 start UltimateProxyV2 --name UltimateProxy -- configName.json # Start UltimateProxy with the specified config file
 ```
 ```bash
 pm2 startup # Auto start pm2 on boot/reboot, (follow the output messages for aditional steps)
@@ -153,7 +164,6 @@ pm2 restart UltimateProxy # To restart UltimateProxy in case of a config change 
   "Wallet": "YOUR WALLET HERE",	// Your mining wallet
   "Worker": "UltimateProxy",	// Proxy worker name
   "Password": "x",	// Proxy password
-  "DashboardApiToken": "", // Your dashboard api token, generate it by talking to https://t.me/UltimateProxyBot or visit https://up.pragma-solutions.fr
   "RatioWindowTimeHours": 1,  // Used for ratio switch strategie, minimum 1H maximum 24H
   "ProxyPort": 4444,	// Proxy port
   "ProxyCert": "",	// Set it if you want your workers to connect to proxy using SSL (See "Docs" folder create a .pfx file)
@@ -161,7 +171,8 @@ pm2 restart UltimateProxy # To restart UltimateProxy in case of a config change 
   "StatsIntervalSeconds": 60,	// Delay between PrintStats
   "NodeGetWorkIntervalMs": 500,	// Delay between node solo getWork requests
   "PrintJobs": true,	// Print new jobs or not
-  "StaleSharesWindow": 10, // How much shares should be kept in memory to catch duplciate shares
+  "AllowDuplicateWorkerNames": false, // If you use duplicate worker names (workers will be deleted from stats table on disconnection)
+  "SendStaleShares": true, // If we should send stale shares to pool
   "ForceWorkersReconnect": false // Reconnect workers on switch, NEED to be turned on if you use Stratum/Nicehash protocol and that your miner doesn't support set.extranonce request
 }
 ```
