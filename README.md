@@ -24,7 +24,7 @@ Ultimate Proxy acts as an intermediary between your mining rigs and pools, recei
 - Smart switch (Profit, Reward, Difficulty, TimeToBlock) _[Thanks to Minerstat for providing such an awesome API for free]_
 - Control and monitor all your workers at one place
 - End-to-end encryption
-- Solo mining directly to node (Only ETH/ETC for now)
+- Solo mining directly to node (Only ETHW/ETC for now)
 - Switch between pools and/or node without restarting miners
 - Switch between wallets without restarting miners
 - Track workers uptime and reconnection, total and per-pool accepted/rejected shares, calculated hashrate, and response time
