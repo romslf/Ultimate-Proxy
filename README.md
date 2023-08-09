@@ -39,17 +39,23 @@ Some users find it useful for:
 - Control workers using different OS at a single place
 - Mining farm with a poor internet connection
 
-# Supported coins
+# Supported coins and algorithms
+_If your favorite coin is not listed use one of the algo name (will not work for SmartSwitch), or come ask about it on discord_
 
-- Ethash: CLO, ETC, ETHW, EXP, QKC, UBQ
-- Equihash: BTCZ, BTG, FLUX, HUSH, KMD, YEC, ZCL, ZEC, ZEN, ZER
-- Kawpow: RVN, MEWC, NEOX
-- Firopow: FIRO
-- Autolykos: ERG
-- SHA512256d: RXD
-- kHeavyHash: KAS
-- Nexapow: NEXA
-- Octopus: CFX
+- **Autolykos**: ERG
+- **Equihash125**: FLUX
+- **Equihash144**: BTCZ, BTG
+- **Equihash192**: YEC, ZCL, ZER
+- **Equihash**: HUSH, KMD, ZEC, ZEN
+- **Ethash**: CLO, ETC, ETHW, EXP, QKC, UBQ
+- **Firopow**: FIRO
+- **Kawpow**: RVN, MEWC, NEOX
+- **kHeavyHash**: KAS
+- **Nexapow**: NEXA
+- **Octopus**: CFX
+- **Sha512256d**: RXD
+- **Sha256**: BTC, BCH, BSV
+- **VerusHash**: VRSC
 
 # Usage
 
