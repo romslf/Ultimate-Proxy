@@ -40,7 +40,7 @@ Some users find it useful for:
 - Mining farm with a poor internet connection
 
 # Supported coins and algorithms
-_If your favorite coin is not listed use one of the algo name (will not work for SmartSwitch), or come ask about it on discord_
+_If your favorite coin is not listed use one of the algo name (will not work for SmartSwitch and coin name should always be used if available), or come ask about it on discord_
 
 - **Autolykos**: ERG
 - **Equihash125**: FLUX
