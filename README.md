@@ -47,7 +47,8 @@ _If your favorite coin is not listed use one of the algo name (will not work for
 - **Equihash144**: BTCZ, BTG
 - **Equihash192**: YEC, ZCL, ZER
 - **Equihash**: HUSH, KMD, ZEC, ZEN
-- **Ethash**: CLO, ETC, ETHW, EXP, QKC, UBQ
+- **Etchash**: ETC
+- **Ethash**: CLO, ETHW, EXP, QKC, UBQ
 - **Firopow**: FIRO
 - **Kawpow**: RVN, MEWC, NEOX
 - **kHeavyHash**: KAS
