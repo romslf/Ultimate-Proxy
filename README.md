@@ -1,11 +1,11 @@
 # Ultimate Proxy
 
-Ultimate Proxy acts as an intermediary between your mining rigs and pools, receiving all packets and adjusting them according to your configuration. It subscribes once for jobs and broadcasts them to all connected workers, leading to huge bandwidth usage reduction and stable job distributions. And a lot more !
-
-## [Download](https://github.com/romslf/Ultimate-Proxy/releases), [Discord](https://discord.gg/zWsTZXBYYq), [Telegram](https://t.me/UltimateProxyChat)
+[![Downloads](https://img.shields.io/github/downloads/romslf/ultimate-proxy/total?style=for-the-badge)](https://github.com/romslf/Ultimate-Proxy/releases)
+[![Discord](https://img.shields.io/discord/754356608158531604?logo=discord&style=for-the-badge&logoColor=white)](https://discord.gg/zWsTZXBYYq)
+[![General badge](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/UltimateProxyChat)
 
 - [Features](#features)
-- [Supported coins](#supported-coins)
+- [Supported coins](#supported-coins-and-algorithms)
 - [Usage](#usage)
 - [Config file examples](#config-file-examples)
     + [Coin config example](#coin-config-example)
@@ -244,4 +244,4 @@ Thank you for reading all this, and happy mining !
 
 # Note
 
-The software contain a 0.8% DevFee
+The software contain a 0.8% DevFee (30s every hour)
