@@ -2,7 +2,7 @@
 
 Ultimate Proxy acts as an intermediary between your mining rigs and pools, receiving all packets and adjusting them according to your configuration. It subscribes once for jobs and broadcasts them to all connected workers, leading to huge bandwidth usage reduction and stable job distributions. And a lot more !
 
-## [Download](https://github.com/romslf/Ultimate-Proxy/releases), [Discord](https://discord.gg/zWsTZXBYYq)
+## [Download](https://github.com/romslf/Ultimate-Proxy/releases), [Discord](https://discord.gg/zWsTZXBYYq), [Telegram](https://t.me/UltimateProxyChat)
 
 - [Features](#features)
 - [Supported coins](#supported-coins)
@@ -46,16 +46,17 @@ _If your favorite coin is not listed use one of the algo name (will not work for
 - **Equihash125**: FLUX
 - **Equihash144**: BTCZ, BTG
 - **Equihash192**: YEC, ZCL, ZER
-- **Equihash**: HUSH, KMD, ZEC, ZEN
+- **Equihash**: ARR, HUSH, KMD, ZEC, ZEN
 - **Etchash**: ETC
-- **Ethash**: CLO, ETHW, EXP, QKC, UBQ
+- **Ethash**: BTN, CAU, CLO, ETHW, EXP, OCTA, QKC, UBQ
 - **Firopow**: FIRO
-- **Kawpow**: RVN, MEWC, NEOX
+- **Kawpow**: CLORE, RVN, MEWC, NEOX
 - **kHeavyHash**: KAS
 - **Nexapow**: NEXA
 - **Octopus**: CFX
+- **Scrypt**: LTC, DOGE, DGB
 - **Sha512256d**: RXD
-- **Sha256**: BTC, BCH, BSV
+- **Sha256**: BTC, BCH, BSV, DGB, XEC
 - **VerusHash**: VRSC
 
 # Usage
