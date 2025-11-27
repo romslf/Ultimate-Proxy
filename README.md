@@ -1,3 +1,9 @@
+⚠️ **This project is no longer maintained.** ⚠️
+
+Ultimate Proxy has evolved into a fully managed **cloud-based platform** with high availability, smart failover, smart load balancing, and zero configuration needed.
+
+👉 **Check out the new version:** [ultimate-proxy.com](https://ultimate-proxy.com) 🚀
+
 # Ultimate Proxy
 
 [![Downloads](https://img.shields.io/github/downloads/romslf/ultimate-proxy/total?style=for-the-badge)](https://github.com/romslf/Ultimate-Proxy/releases)
