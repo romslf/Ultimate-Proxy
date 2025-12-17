@@ -6,7 +6,6 @@ Ultimate Proxy has evolved into a fully managed **cloud-based platform** with hi
 
 # Ultimate Proxy
 
-[![Downloads](https://img.shields.io/github/downloads/romslf/ultimate-proxy/total?style=for-the-badge)](https://github.com/romslf/Ultimate-Proxy/releases)
 [![Discord](https://img.shields.io/discord/754356608158531604?logo=discord&style=for-the-badge&logoColor=white)](https://discord.gg/zWsTZXBYYq)
 [![General badge](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/UltimateProxyChat)
 
